@@ -22,6 +22,46 @@ body {
   background-color: #FFFFFF;
 }
 
+.button {
+  background-color: #756257;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.button-blue {
+  background-color: #83B3D3;
+}
+
+.button-green {
+  background-color: #7DB54F;
+}
+
+.reset {
+  background: none;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.navigation-item .button {
+  color: #FFFFFF;
+}
+
+.button-catalog {
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .navigation-link {
   font-weight: 700;
   color: #000000;
@@ -53,15 +93,27 @@ body {
   font-weight: 700;
   text-align: center;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .text-bottom {
   font-size: 22px;
   font-weight: 400;
   text-align: center;
+  color: #333333;
 }
 
-.advantages-item {
+.advantages {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantages-item:nth-child(1),
+.advantages-item:nth-child(2)
+{
+  color: #FFFFFF;
   background-color: #83B3D3;
 }
 
@@ -75,3 +127,178 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.additional-list {
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+.additional-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-title,
+.additional-title
+{
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.hotel-search .text-bottom {
+  line-height: 26px;
+}
+
+.inner-header {
+  background-color: #83B3D3;
+  background-image: url("../images/background-catalog.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+}
+
+.control {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-filter .button {
+  line-height: 20px;
+}
+
+.catalog-filter .reset {
+  line-height: 23px;
+  text-transform: capitalize;
+}
+
+.found-number {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.hotel-card .button {
+  line-height: 21px;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.hotel-card-type,
+.hotel-card-price
+{
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.product-card-rating {
+  background-color: #F2F2F2;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.load-block .button {
+  background-color: #83B3D3;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.pagination-link {
+  background-color: #83B3D3;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.select-control-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.newsletter {
+  background-color: #83B3D3;
+  background-image: url("../images/background-mailing.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.newsletter-info {
+  font-size: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.newsletter-form {
+  text-align: center;
+}
+
+.newsletter-button {
+  background-color: #83B3D3;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.main-inner .newsletter{
+  background: none;
+}
+
+.main-inner .newsletter-title {
+  color: #000000;
+}
+
+.main-inner .newsletter-info {
+  color: #333333;;
+}
+
+
+.footer-social-item .button {
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
