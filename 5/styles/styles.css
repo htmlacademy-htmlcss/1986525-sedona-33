@@ -68,6 +68,10 @@ body {
   text-align: center;
 }
 
+.navigation-item {
+  margin: 20px 17px;
+}
+
 .navigation-item .button {
   color: #FFFFFF;
 }
@@ -95,6 +99,7 @@ body {
 }
 
 .navigation-list {
+  display: flex;
   width: 440px;
   margin: 0;
   padding: 0;
