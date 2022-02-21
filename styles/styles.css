@@ -543,6 +543,9 @@ body {
   color: #000000;
 }
 
+.hotel-card-image {
+  object-fit: contain;
+}
 
 .product-card-favorites {
   width: 140px;
