@@ -130,12 +130,13 @@ body {
 }
 
 .navigation-user {
-  max-width: 300px;
+  max-width: 350px;
   justify-content: flex-end;
   margin-left: auto;
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 17px;
   font-weight: 700;
@@ -144,10 +145,55 @@ body {
   text-decoration: none;
 }
 
+.navigation-link:hover {
+  color: #756257;
+}
+
+.navigation-link:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
+.navigation-link:hover .navigation-icon {
+  fill: #756257;
+}
+
+.navigation-icon-area {
+  position: absolute;
+  top: 15px;
+  left: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  font-size: 10px;
+  line-height: 13px;
+  padding: 5px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+  box-sizing: border-box;
+}
+
 .navigation-user .navigation-link {
   min-width: 42px;
   min-height: 66px;
   padding: 0;
+}
+
+.navigation-user .navigation-item:nth-child(2) {
+  margin-right: 20px;
 }
 
 .navigation-link.button {
@@ -162,6 +208,10 @@ body {
   padding-bottom: 0;
   display: flex;
   flex-wrap: wrap;
+}
+
+.navigation-link-current:hover {
+  color: #000000;
 }
 
 .navigation-link-current::after {
@@ -298,18 +348,30 @@ body {
   margin: 89px auto 0;
   width: 75px;
   height: 72px;
+  background-image: url("../images/icon/houseroom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75px 72px;
 }
 
 .additional-item:nth-child(2) .additional-image {
   margin: 91px auto 0;
   width: 74px;
   height: 70px;
+  background-image: url("../images/icon/food.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 74px 70px;
 }
 
 .additional-item:nth-child(3) .additional-image {
   margin: 85px auto 0;
   width: 64px;
   height: 76px;
+  background-image: url("../images/icon/gift.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px 76px;
 }
 
 .advantages-title,
@@ -697,7 +759,7 @@ body {
 
 .newsletter-info {
   width: 720px;
-  margin: 28px auto 46px;
+  margin: 29px auto 46px;
   font-size: 22px;
   text-align: center;
   color: #FFFFFF;
@@ -722,6 +784,7 @@ body {
 }
 
 .newsletter-button {
+  font-family: "PT Sans", sans-serif;
   background-color: #83B3D3;
   font-size: 20px;
   line-height: 26px;
@@ -806,6 +869,10 @@ body {
   height: 16px;
 }
 
+.button .social-icon {
+  fill: #83B3D3; 
+ }
+ 
 .footer-contacts {
   flex-grow: 1;
 }
