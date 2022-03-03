@@ -985,8 +985,12 @@ body {
 }
 
 .footer-phone {
+  box-sizing: border-box;
   display: block;
-  width: 100%;
+  width: 361px;
+  height: 70px;
+  padding: 15px;
+  margin: -15px auto 0;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -995,7 +999,35 @@ body {
   color: #000000;
 }
 
+.footer-phone:focus {
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #756257;
+}
+
+.footer-phone:hover {
+  color: #756257;
+}
+
+.footer-phone:active {
+  color: #756257;
+  opacity: 0.3;
+  outline: none;
+}
+
 .htmlacademy-link {
-  display: block;
-  margin-top: 1px;
+  display: flex;
+  height: 70px;
+  margin-top: -13px;
+  align-items: center;
+}
+
+.htmlacademy-link .htmlacademy-logo{
+  fill: #000000;
+}
+
+.htmlacademy-link:focus .htmlacademy-logo{
+  fill: #756257;
 }
