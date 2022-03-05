@@ -939,6 +939,7 @@ body {
 .footer-made-in {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .footer-social-item .button {
@@ -1019,15 +1020,35 @@ body {
 
 .htmlacademy-link {
   display: flex;
-  height: 70px;
-  margin-top: -13px;
+  justify-content: center;
   align-items: center;
+  width: 160px;
+  height: 70px;
+  margin-top: -16px;
+  margin-right: -23px;
 }
 
 .htmlacademy-link .htmlacademy-logo{
   fill: #000000;
 }
 
-.htmlacademy-link:focus .htmlacademy-logo{
+.htmlacademy-link:focus{
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+  border-radius: 10px;
+}
+
+.htmlacademy-link:focus .htmlacademy-logo,
+.htmlacademy-link:hover .htmlacademy-logo
+{
   fill: #756257;
+}
+
+.htmlacademy-link:active{
+  outline: none;
+}
+
+.htmlacademy-link:active .htmlacademy-logo {
+  color: #756257;
+  opacity: 0.3;
 }
