@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Роман Адам](https://up.htmlacademy.ru/htmlcss/33/user/1986525).
-* Наставник: [Александр Румянцев](https://htmlacademy.ru/profile/id1521451).
+* Наставник: [Алексей Малейков](https://htmlacademy.ru/profile/id1521451).
 
 ---
 
