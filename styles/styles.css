@@ -549,7 +549,7 @@ body {
 
 .catalog-filter-title {
   font-weight: 700;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -560,7 +560,8 @@ body {
 }
 
 .catalog-filter-item {
-  margin-bottom: 10px;
+  display: flex;
+  margin-bottom: 13px;
 }
 
 .catalog-filter-item:last-child {
@@ -667,8 +668,194 @@ body {
 }
 
 .control {
+  display: flex;
   font-size: 18px;
   line-height: 23px;
+  cursor: pointer;
+}
+
+.control-mark {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 1px 19px 0 1px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+  outline-offset: -1px;
+}
+
+.control:hover .control-input[type="checkbox"] + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:active .control-input[type="checkbox"] + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/icon/tick.svg");
+  background-size: 12px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:focus:checked + .control-mark {
+  outline: 3px solid #83B3D3;
+  outline-offset: -1px;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
+.range {
+  padding-top: 5px;
+}
+
+.range-wrapper-inputs {
+  position: relative;
+  display: flex;
+  width: 287px;
+}
+
+.range-input {
+  position: relative;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  width: 145px;
+  height: 48px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+}
+
+.range-label {
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  top: 12px;
+  left: 113px;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.range-label:nth-of-type(2) {
+  left: 251px;
+}
+
+.range-input:nth-of-type(1) {
+  border-radius: 4px 0 0 4px;
+  padding: 14px 40px 11px 17px;
+}
+
+.range-input:nth-of-type(2) {
+  border-radius: 0 4px 4px 0;
+  margin-left: -2px;
+  padding: 14px 40px 11px 15px;
+  width: 144px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input:focus{
+  z-index: 1;
+  box-shadow: 
+            inset 0px 0px 0px 3px #81B3D2,
+            0px 0px 0px 3px #81B3D2;
+  outline: none;
+}
+
+.range-wrapper-inputs:hover .range-input:nth-of-type(1){
+  border-right: none;
+  width: 143px;
+}
+
+.range-wrapper-inputs:hover .range-input:nth-of-type(2){
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  margin-left: 0;
+}
+
+.range-wrapper-inputs .range-input:nth-of-type(1):hover {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 145px;
+}
+
+.range-input:nth-of-type(1):hover ~ .range-input:nth-of-type(2){
+  margin-left: 0;
+  width: 142px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-left: none;
+}
+
+.range-input:active {
+  background-color: #756257;
+  outline: none;
+  box-shadow: none;
+}
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 4px;
+  margin-top: 28px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+}
+
+.range-bar {
+  position: relative;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
 }
 
 .catalog-filter .button {
