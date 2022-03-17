@@ -351,5 +351,47 @@
           </section>
       </footer>
     </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <svg class="modal-close-icon" aria-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        </section>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="label-data" for="data-first">Дата заезда:</label>
+            <div class="field-container-data">
+            <input class="field" type="text" id="data-first" name="data-first" placeholder="Укажите дату" value="27 апреля 2020">
+            </div>
+            <p class="field-info field-error">Мы не можем отправить вас в прошлое.</p>
+            <label class="label-data" for="data-second">Дата выезда:</label>
+            <div class="field-container-data">
+            <input class="field" type="text" id="data-second" name="data-second" placeholder="Укажите дату" value="1 сентября 2021">
+            </div>
+            <p class="field-info">На эти даты есть свободные номера. Пока есть.</p>
+            <label class="label-data" for="label-adults">Взрослые:</label>
+            <div class="field-container-adults">
+              <button class="minus" type="button"></button>
+              <span class="field-number">2</span>
+              <button class="plus" type="button" id="label-adults"></button>
+            </div>
+            <div class="label-tooltip">
+            <label class="label-data label-children" for="label-children">Дети:</label>
+            <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+            <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+          </div>
+            <div class="field-container-children">
+            <button class="minus" type="button"></button>
+            <span class="field-number">1</span>
+            <button class="plus" type="button" id="label-children"></button>
+            </div>
+            <button class="button button-blue" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
