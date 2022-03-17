@@ -176,7 +176,7 @@
           </section>
       </footer>
     </div>
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <svg class="modal-close-icon" aria-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
@@ -200,7 +200,9 @@
             <p class="field-info">На эти даты есть свободные номера. Пока есть.</p>
             <label class="label-data" for="label-adults">Взрослые:</label>
             <div class="field-container-adults">
+              <button class="minus" type="button"></button>
               <span class="field-number">2</span>
+              <button class="plus" type="button" id="label-adults"></button>
             </div>
             <div class="label-tooltip">
             <label class="label-data label-children" for="label-children">Дети:</label>
@@ -208,7 +210,9 @@
             <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
           </div>
             <div class="field-container-children">
+            <button class="minus" type="button"></button>
             <span class="field-number">1</span>
+            <button class="plus" type="button" id="label-children"></button>
             </div>
             <button class="button button-blue" type="submit">Найти</button>
         </form>
