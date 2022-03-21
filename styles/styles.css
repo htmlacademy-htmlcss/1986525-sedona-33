@@ -21,6 +21,7 @@ html {
 body {
   display: flex;
   min-height: 100%;
+  min-width: 1280px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -99,7 +100,7 @@ body {
   display: block;
   box-sizing: border-box;
   width: 575px;
-  height: 60px;
+  min-height: 60px;
   margin: 0 auto 93px;
   padding: 14px 0;
   color: #FFFFFF;
@@ -1263,7 +1264,7 @@ body {
 .newsletter-form {
   display: flex;
   justify-content: center;
-  height: 60px;
+  min-height: 60px;
   text-align: center;
 }
 
@@ -1307,7 +1308,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   width: 200px;
-  height: 60px;
+  min-height: 60px;
   border: 0;
   border-radius: 0 10px 10px 0;
   box-sizing: border-box;
@@ -1436,7 +1437,7 @@ body {
   box-sizing: border-box;
   display: block;
   width: 368px;
-  height: 70px;
+  min-height: 70px;
   padding: 15px;
   margin: -15px auto 0;
   font-size: 40px;
