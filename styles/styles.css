@@ -1137,7 +1137,8 @@ img {
   background-color: #68a2ca;
 }
 
-.load-block .button:active .pagination-link:active {
+.load-block .button:active,
+ .pagination-link:active {
   background-color: #68a2ca;
   outline: none;
   color: rgb(255, 255, 255, 0.3);
